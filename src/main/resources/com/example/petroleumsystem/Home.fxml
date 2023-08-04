@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="598.0" prefWidth="1087.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.petroleumsystem.Home">
+   <children>
+      <HBox layoutY="56.0" prefHeight="124.0" prefWidth="1087.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Pane prefHeight="124.0" prefWidth="224.0" style="-fx-background-color: white; -fx-background-radius: 5;">
+               <HBox.margin>
+                  <Insets left="40.0" />
+               </HBox.margin>
+               <effect>
+                  <DropShadow color="#d6d6d6" />
+               </effect>
+               <children>
+                  <Label layoutX="14.0" layoutY="14.0" prefHeight="32.0" prefWidth="130.0" style="-fx-text-fill: #03256C #03256C;" text="Employee" textFill="#8d8989">
+                     <font>
+                        <Font name="SansSerif Regular" size="25.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblEmployee" layoutX="14.0" layoutY="78.0" prefHeight="32.0" prefWidth="91.0" style="-fx-text-fill: #03256C #03256C;">
+                     <font>
+                        <Font name="SansSerif Regular" size="25.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="159.0" layoutY="78.0" prefHeight="39.0" prefWidth="51.0" style="-fx-background-color: red; -fx-background-radius: 8;" />
+                  <ImageView fitHeight="32.0" fitWidth="31.0" layoutX="170.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/icons/worker_32px.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane prefHeight="124.0" prefWidth="224.0" style="-fx-background-color: white; -fx-background-radius: 5;">
+               <effect>
+                  <DropShadow color="#d6d6d6" />
+               </effect>
+               <children>
+                  <Label layoutX="14.0" layoutY="14.0" prefHeight="32.0" prefWidth="130.0" style="-fx-text-fill: #03256C #03256C;" text="Customers" textFill="#8d8989">
+                     <font>
+                        <Font name="SansSerif Regular" size="25.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblCustomer" layoutX="14.0" layoutY="78.0" prefHeight="32.0" prefWidth="91.0" style="-fx-text-fill: #03256C #03256C;">
+                     <font>
+                        <Font name="SansSerif Regular" size="25.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="159.0" layoutY="78.0" prefHeight="39.0" prefWidth="51.0" style="-fx-background-color: #F8B400; -fx-background-radius: 8;" />
+                  <ImageView fitHeight="32.0" fitWidth="31.0" layoutX="170.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/icons/user_32px.png" />
+                     </image>
+                  </ImageView>
+               </children>
+               <HBox.margin>
+                  <Insets left="50.0" />
+               </HBox.margin>
+            </Pane>
+            <Pane prefHeight="124.0" prefWidth="224.0" style="-fx-background-color: white; -fx-background-radius: 5;">
+               <effect>
+                  <DropShadow color="#d6d6d6" />
+               </effect>
+               <children>
+                  <Label layoutX="14.0" layoutY="14.0" prefHeight="32.0" prefWidth="130.0" style="-fx-text-fill: #03256C #03256C;" text="Purchases" textFill="#8d8989">
+                     <font>
+                        <Font name="SansSerif Regular" size="25.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblPurchase" layoutX="14.0" layoutY="78.0" prefHeight="32.0" prefWidth="130.0" style="-fx-text-fill: #03256C #03256C;">
+                     <font>
+                        <Font name="SansSerif Regular" size="25.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="159.0" layoutY="78.0" prefHeight="39.0" prefWidth="51.0" style="-fx-background-color: #293462; -fx-background-radius: 8;" />
+                  <ImageView fitHeight="32.0" fitWidth="31.0" layoutX="170.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/icons/worker_32px.png" />
+                     </image>
+                  </ImageView>
+               </children>
+               <HBox.margin>
+                  <Insets left="50.0" />
+               </HBox.margin>
+            </Pane>
+            <Pane prefHeight="124.0" prefWidth="224.0" style="-fx-background-color: white; -fx-background-radius: 5;">
+               <effect>
+                  <DropShadow color="#d6d6d6" />
+               </effect>
+               <children>
+                  <Label layoutX="14.0" layoutY="14.0" prefHeight="32.0" prefWidth="130.0" style="-fx-text-fill: #03256C #03256C;" text="Sales" textFill="#8d8989">
+                     <font>
+                        <Font name="SansSerif Regular" size="25.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblSales" layoutX="14.0" layoutY="78.0" prefHeight="32.0" prefWidth="91.0" style="-fx-text-fill: #03256C #03256C;">
+                     <font>
+                        <Font name="SansSerif Regular" size="25.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="159.0" layoutY="78.0" prefHeight="39.0" prefWidth="51.0" style="-fx-background-color: #764AF1; -fx-background-radius: 8;" />
+                  <ImageView fitHeight="32.0" fitWidth="31.0" layoutX="170.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/icons/fund_accounting_32px.png" />
+                     </image>
+                  </ImageView>
+               </children>
+               <HBox.margin>
+                  <Insets left="40.0" />
+               </HBox.margin>
+            </Pane>
+         </children>
+      </HBox>
+      <Label alignment="CENTER" layoutX="33.0" prefHeight="49.0" prefWidth="194.0" style="-fx-text-fill: #03256C #03256C;" text="Dashboard / Home">
+         <font>
+            <Font name="SansSerif Italic" size="20.0" />
+         </font>
+      </Label>
+      <PieChart fx:id="purchasePieChart" layoutX="42.0" layoutY="253.0" prefHeight="331.0" prefWidth="484.0" style="-fx-background-color: white; -fx-background-radius: 5;">
+         <effect>
+            <DropShadow color="#d6d6d6" height="30.0" radius="14.5" width="30.0" />
+         </effect>
+      </PieChart>
+      <ComboBox fx:id="comboSearch" layoutX="42.0" layoutY="203.0" onAction="#CombofilterByDate" prefHeight="39.0" prefWidth="224.0" promptText="Purchase Filter by Date" style="-fx-background-color: white; -fx-background-radius: 5;">
+         <effect>
+            <DropShadow color="#d6d6d6" height="40.0" radius="19.5" width="40.0" />
+         </effect>
+      </ComboBox>
+      <Button fx:id="btnRefresh" layoutX="1031.0" layoutY="205.0" mnemonicParsing="false" onAction="#OnRefresh" style="-fx-background-color: red; -fx-background-radius: 10;">
+         <font>
+            <Font size="17.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIcon fill="WHITE" glyphName="REFRESH" />
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <PieChart fx:id="salesPieChart" layoutX="586.0" layoutY="253.0" prefHeight="331.0" prefWidth="484.0" style="-fx-background-color: white; -fx-background-radius: 5;">
+         <effect>
+            <DropShadow color="#d6d6d6" height="30.0" radius="14.5" width="30.0" />
+         </effect>
+      </PieChart>
+      <ComboBox fx:id="comboSearchSales" layoutX="785.0" layoutY="203.0" onAction="#CombofilterByDateSales" prefHeight="39.0" prefWidth="224.0" promptText="Sales Filter by Date" style="-fx-background-color: white; -fx-background-radius: 5;">
+         <effect>
+            <DropShadow color="#d6d6d6" height="40.0" radius="19.5" width="40.0" />
+         </effect>
+      </ComboBox>
+   </children>
+</AnchorPane>

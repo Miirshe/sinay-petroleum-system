@@ -1,0 +1,26 @@
+#btnHome:hover,
+#btnEmployee:hover,
+#btnSupplier:hover,
+#btnFuel:hover,
+#btnCustomer:hover,
+#btnSales:hover,
+#btnPurchase:hover,
+#btnUsers:hover,
+#btnReports:hover,
+#btnLogOut:hover{
+ -fx-background-color : #002E94 !important;
+}
+
+#btnHome.active,
+#btnEmployee.active,
+#btnSupplier.active,
+#btnFuel.active,
+#btnCustomer.active,
+#btnSales.active,
+#btnPurchase.active,
+#btnUsers.active,
+#btnReports.active,
+#btnLogOut.active{
+ -fx-background-color : #002E94 !important;
+ -fx-text-fill : #ffffff;
+}

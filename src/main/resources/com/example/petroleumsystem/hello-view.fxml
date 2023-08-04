@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="443.0" prefWidth="339.0" style="-fx-background-color: white; -fx-background-radius: 10;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.petroleumsystem.HelloController">
+   <children>
+      <Label alignment="CENTER" layoutX="57.0" layoutY="21.0" prefHeight="51.0" prefWidth="225.0" style="-fx-text-fill: #03256C;" text="LOGIN">
+         <font>
+            <Font name="SansSerif Regular" size="25.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtUser" layoutX="57.0" layoutY="87.0" prefHeight="45.0" prefWidth="225.0" promptText="Enter Username" style="-fx-background-color: white; -fx-border-color: #E6E8EC; -fx-border-width: 1px; -fx-border-style: solid; -fx-background-radius: 8; -fx-border-radius: 8;">
+         <font>
+            <Font name="SansSerif Regular" size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtShowPass" layoutX="57.0" layoutY="150.0" prefHeight="45.0" prefWidth="225.0" style="-fx-background-color: white; -fx-border-color: #E6E8EC; -fx-border-width: 1pt; -fx-border-style: solid; -fx-background-radius: 8; -fx-border-radius: 8;">
+         <font>
+            <Font name="SansSerif Regular" size="15.0" />
+         </font>
+      </TextField>
+      <Button fx:id="btnLogin" layoutX="57.0" layoutY="266.0" mnemonicParsing="false" onAction="#OnLogin" prefHeight="45.0" prefWidth="225.0" style="-fx-background-color: #03256C; -fx-text-fill: white; -fx-background-radius: 5;" text="LOGIN">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="SansSerif Regular" size="18.0" />
+         </font>
+      </Button>
+      <CheckBox fx:id="btnCheckPass" layoutX="57.0" layoutY="221.0" mnemonicParsing="false" onAction="#onCheckPassword" prefHeight="21.0" prefWidth="144.0" text="Show Password">
+         <font>
+            <Font name="SansSerif Regular" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </CheckBox>
+      <PasswordField fx:id="txtHidePass" layoutX="57.0" layoutY="150.0" prefHeight="45.0" prefWidth="225.0" promptText="Enter password" style="-fx-background-color: white; -fx-border-color: #E6E8EC; -fx-border-width: 1pt; -fx-border-style: solid; -fx-background-radius: 8; -fx-border-radius: 8;">
+         <font>
+            <Font name="SansSerif Regular" size="15.0" />
+         </font>
+      </PasswordField>
+      <Hyperlink fx:id="ForgetpassLink" alignment="CENTER" layoutX="55.0" layoutY="334.0" onAction="#onLinkForgetPass" prefHeight="38.0" prefWidth="235.0" text="Forget Password ">
+         <font>
+            <Font name="SansSerif Regular" size="17.0" />
+         </font>
+      </Hyperlink>
+      <Label fx:id="lblResult" layoutX="57.0" layoutY="382.0" prefHeight="45.0" prefWidth="225.0" textFill="#ee0000">
+         <font>
+            <Font name="SansSerif Regular" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
